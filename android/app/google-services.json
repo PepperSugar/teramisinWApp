@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "694886764231",
+    "project_id": "teramisingym",
+    "storage_bucket": "teramisingym.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:694886764231:android:7f15b646590832863838e2",
+        "android_client_info": {
+          "package_name": "com.teramisin.teramisin"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCAXi3PkZlufEXjFhBb2tph_xdWFJ4atEw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

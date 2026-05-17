@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(flutter --version 2>&1)",
+      "Bash(\"C:/Users/emirs/Documents/Flutter/flutter/bin/flutter\" analyze *)",
+      "Bash(Get-ChildItem -Path \"C:\\\\Projects\\\\Teramisin\\\\lib\" -Recurse -Filter \"*.dart\")",
+      "Bash(Select-Object -ExpandProperty FullName)"
+    ]
+  }
+}
