@@ -1,0 +1,25 @@
+workflows:
+  ios-simulator:
+    name: iOS Simulator Build
+    max_build_duration: 30
+    environment:
+      flutter: stable
+      xcode: latest
+      cocoapods: default
+      groups:
+        - firebase_ios
+    scripts:
+      - name: Set up GoogleService-Info.plist
+        script: |
+          echo "$GOOGLE_SERVICE_INFO_PLIST" > ios/Runner/GoogleService-Info.plist
+      - name: Get Flutter packages
+        script: flutter pub get
+      - name: Install CocoaPods
+        script: cd ios && pod install
+      - name: Build iOS simulator
+        script: |
+          flutter build ios --simulator --no-codesign
+          cd build/ios/iphonesimulator
+          zip -r $CM_BUILD_DIR/Teramisin.zip Runner.app
+    artifacts:
+      - Teramisin.zip
